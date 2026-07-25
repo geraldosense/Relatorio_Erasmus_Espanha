@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <rect width="800" height="520" fill="#1A2420"/>
+  <rect x="120" y="180" width="560" height="220" rx="8" fill="#243028" stroke="#3D9970" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="200" y="120" width="180" height="80" rx="4" fill="#2D3D34"/>
+  <text x="400" y="420" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#5CBF6A" opacity="0.7">Imagem da empresa  assets/about-empresa.jpg</text>
+</svg>

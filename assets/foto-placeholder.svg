@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" fill="none">
+  <rect width="480" height="600" fill="#EDE4D6"/>
+  <circle cx="240" cy="220" r="80" fill="#D4C9B8"/>
+  <ellipse cx="240" cy="420" rx="120" ry="100" fill="#D4C9B8"/>
+  <text x="240" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8A8278">Coloca a tua foto em assets/foto.jpg</text>
+</svg>
