@@ -89,6 +89,7 @@
       lineEls[1].innerHTML = TYPEWRITER_LINES[1].segments
         .map((seg) => `<span class="${seg.className}">${seg.text}</span>`)
         .join('');
+      revealIntroEnter();
       return;
     }
 
@@ -116,6 +117,14 @@
     }
 
     cursor2.classList.add('is-idle');
+    revealIntroEnter();
+  }
+
+  function revealIntroEnter() {
+    const introActions = document.getElementById('intro-actions');
+    if (introDismissed || !introActions) return;
+    introActions.hidden = false;
+    requestAnimationFrame(() => introActions.classList.add('is-visible'));
   }
 
   function enterSite() {
@@ -140,6 +149,9 @@
 
   if (intro && siteRoot) {
     runTypewriter();
+
+    const introEnterBtn = document.getElementById('intro-enter-btn');
+    introEnterBtn?.addEventListener('click', enterSite);
 
     document.addEventListener('keydown', (e) => {
       if (!introDismissed && e.key === 'Enter') {
