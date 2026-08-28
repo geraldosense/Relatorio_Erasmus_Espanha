@@ -245,7 +245,7 @@
     revealObserver.observe(el);
   });
 
-  document.querySelectorAll('.project-card, .skills-column, .about-panel').forEach((el) => {
+  document.querySelectorAll('.skills-column, .about-panel').forEach((el) => {
     el.classList.add('reveal');
     revealObserver.observe(el);
   });
