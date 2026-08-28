@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Go Live",
+      "type": "shell",
+      "command": "python3 -m http.server 5500",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "goLive",
+        "pattern": { "regexp": "^$" },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".",
+          "endsPattern": "."
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": false
+      },
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "Go Live: abrir no browser",
+      "dependsOn": ["Go Live", "Abrir site no browser"],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    },
+    {
+      "label": "Abrir site no browser",
+      "type": "shell",
+      "command": "open http://127.0.0.1:5500/index.html",
+      "problemMatcher": []
+    }
+  ]
+}

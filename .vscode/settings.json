@@ -1,3 +1,17 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.host": "127.0.0.1",
+  "liveServer.settings.root": "/",
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.useLocalIp": false,
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/.git/**",
+    "**/*.md"
+  ],
+  "livePreview.defaultPreviewPath": "/index.html",
+  "livePreview.portNumber": 5500,
+  "livePreview.autoRefreshPreview": "OnChangesToMadeFiles"
 }
